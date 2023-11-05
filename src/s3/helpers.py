@@ -24,9 +24,9 @@ def connectToPolly(
 
 def speak(polly, text, format="mp3", voice="Brian"):
     resp = polly.synthesize_speech(OutputFormat=format, Text=text, VoiceId=voice)
-    soundBytes = resp["AudioStream"].read()
-    myuuid = str(uuid.uuid4())
+    sound_bytes = resp["AudioStream"].read()
+    my_uuid = str(uuid.uuid4())
     client.put_object(
-        Body=soundBytes, Bucket="text-to-audio-testy", Key=myuuid + ".mp3"
+        Body=sound_bytes, Bucket="text-to-audio-testy", Key=my_uuid + ".mp3"
     )
-    return myuuid
+    return my_uuid
