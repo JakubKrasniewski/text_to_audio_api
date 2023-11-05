@@ -1,8 +1,12 @@
+from decouple import config
+
 
 class Config:
-    pass
+    AWS_ACCESS_KEY_ID = config("AWS_ACCESS_KEY_ID")
+    AWS_SECRET_ACCESS_KEY = config("AWS_SECRET_ACCESS_KEY")
+
 
 class SourceConfig:
-    LANGUAGES_PATH = 'src/sources/languages.json'
-    DEFAULT_REGION = 'eu-central-1'
-    DEFAULT_URL = 'https://polly.eu-central-1.amazonaws.com'
+    LANGUAGES_PATH = config("LANGUAGES_PATH")
+    DEFAULT_REGION = config("DEFAULT_REGION")
+    DEFAULT_URL = config("DEFAULT_URL")
