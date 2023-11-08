@@ -1,9 +1,7 @@
-1. wprowadzenie autoryzacji JWT token
+
 2, zrobić endopinty(convert[parametr obsługujący przetwarzanie głosu jaki jezyk itd](zwraca nazwe i jezeli chce,
 endpont langiages -> zwraca nam dostepne jezyki i imiona przypisane do jezykow
 pobrac plib uderza na /downlad(nazwa pliku -> pobranie)), ...) automatycznie pobiramy plik mp3
 3.
 
 ///
-3.przygotuj funakcjnalnosć languages -> zwortka jezykow
-3. jak przekazywac info do convert(jezyk, tekst) [hhtp:body]
