@@ -7,7 +7,7 @@ defaultRegion = 'eu-central-1'
 defaultUrl = 'https://polly.eu-central-1.amazonaws.com'
 
 def connectToPolly(regionName=defaultRegion, endpointUrl=defaultUrl):
-    return boto3.client('polly', region_name=regionName, endpoint_url=endpointUrl, aws_access_key_id='AKIARXNCEQZLDQVBTFNG',aws_secret_access_key='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')
+    return boto3.client('polly', region_name=regionName, endpoint_url=endpointUrl, aws_access_key_id='',aws_secret_access_key='')
 
 def speak(polly, text, format='mp3', voice='Brian'):
     resp = polly.synthesize_speech(OutputFormat=format, Text=text, VoiceId=voice)
